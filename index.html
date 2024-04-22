@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="outer">
+            <div id="form">
+                <input type="text" placeholder="Enter Your Name" id="frstname">
+                <input type="text" placeholder="Enter Your Father Name" id="fathername">
+                <input type="text" placeholder="Enter Your Last Degree" id="degree">
+                <div class="age-flex">
+                    <span>
+                        <input type="number" placeholder="Enter Your Age" class="gender" id="input-age">
+                    </span>
+                <span>
+                    <!-- <input type="text" placeholder="Enter Your Gender" class="gender" id="input-gender"> -->
+                    <select class="gender" id="input-gender">
+                        <option value="select gender" class="option">select gender</option>
+                        <option value="Male" class="option">Male</option>
+                        <option value="Female" class="option">Female</option>
+                    </select>
+                </span>
+                </div>
+                <input type="submit" id="submit">
+            </div>
+                
+        
+        </div>
+       <div class="card-outer">
+        <div class="card">
+            <div class="card-img">
+                <img src="./download-removebg-preview.png" alt="logo" height="150px"
+                width="auto">
+            </div>
+            <div class="card-content">
+                <p id="name">
+
+                </p>
+                <p id="f-name">
+
+                </p>
+                <p id="last-degree">
+
+                </p>
+                <div class="age-flex">
+                    <p id="output-age" class="p-gender">
+
+                    </p>
+                    <p id="output-gender" class="p-gender">
+    
+                    </p>
+                </div>
+            </div>
+        </div>
+       </div>
+    </div>
+    <script>
+        $(document).ready(
+            function(){
+                $("#submit").click(
+                    function(){
+                        $('.card-outer').show(400);
+                        $('.outer').hide()
+                    }
+                )
+            }
+        )
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
